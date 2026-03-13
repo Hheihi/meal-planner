@@ -1,0 +1,23 @@
+{
+  "skill_name": "idea-to-prd",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I am building an AI writing assistant for content teams, but the requirement is still messy. Talk it through with me first, help me converge on users, core workflow, scope boundaries, and success metrics, and then write the PRD.",
+      "expected_output": "The assistant should enter an interview-first flow, keep clarifying in stages, move to PRD generation after an explicit readiness check, save the result under the project root docs directory, and initialize document metadata for future dated updates.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We need a PRD for a feature that lets admins schedule role changes in advance. Please ask me follow-up questions first and then write the PRD once the scope is solid.",
+      "expected_output": "The assistant should gather scope, edge cases, permissions, constraints, and rollout details before drafting a structured PRD, saving it under the project root docs directory, and including document metadata plus a change log section.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Based on the requirement we already discussed, generate the PRD directly. Do not invent missing details. Mark unresolved parts as assumptions or open questions.",
+      "expected_output": "The assistant should perform a lightweight readiness check, then generate a PRD that clearly separates confirmed details from assumptions and open questions, save it under the project root docs directory, and prepare the document for future dated incremental updates.",
+      "files": []
+    }
+  ]
+}
