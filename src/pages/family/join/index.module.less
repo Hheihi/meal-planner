@@ -1,0 +1,78 @@
+@import '../../../app.less';
+
+.page {
+  min-height: 100vh;
+  background-color: @color-bg-page;
+  padding: @spacing-lg;
+}
+
+.header {
+  margin-bottom: @spacing-xl;
+}
+
+.title {
+  font-size: @font-size-xl;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-sm;
+}
+
+.desc {
+  font-size: @font-size-md;
+  color: @color-text-secondary;
+}
+
+.form {
+  background-color: @color-bg-card;
+  border-radius: @radius-md;
+  padding: @spacing-lg;
+}
+
+.inputWrapper {
+  margin-bottom: @spacing-md;
+}
+
+.label {
+  font-size: @font-size-md;
+  color: @color-text-secondary;
+  margin-bottom: @spacing-sm;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  height: 80px;
+  font-size: @font-size-lg;
+  color: @color-text-primary;
+  border-bottom: 1PX solid @color-border;
+  padding: @spacing-sm 0;
+}
+
+.bottomBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: @color-bg-card;
+  border-top: 1PX solid @color-border-light;
+  padding: @spacing-md @spacing-lg;
+  padding-bottom: calc(@spacing-md + env(safe-area-inset-bottom));
+}
+
+.joinBtn {
+  width: 100%;
+  background-color: @color-primary;
+  color: #fff;
+  font-size: @font-size-lg;
+  padding: @spacing-md;
+  border-radius: @radius-md;
+  border: none;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.joinBtnDisabled {
+  background-color: @color-text-light;
+}

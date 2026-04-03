@@ -1,0 +1,41 @@
+@import '../../app.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: @spacing-xl * 2 @spacing-lg;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  background-color: @color-error;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: @spacing-md;
+}
+
+.iconText {
+  color: #fff;
+  font-size: @font-size-xl;
+  font-weight: bold;
+}
+
+.text {
+  font-size: @font-size-md;
+  color: @color-text-secondary;
+  margin-bottom: @spacing-lg;
+}
+
+.retryBtn {
+  background-color: @color-primary;
+  color: #fff;
+  font-size: @font-size-md;
+  padding: @spacing-sm @spacing-lg;
+  border-radius: @radius-md;
+  border: none;
+}

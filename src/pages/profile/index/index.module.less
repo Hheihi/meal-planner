@@ -1,0 +1,118 @@
+@import '../../../app.less';
+
+.page {
+  min-height: 100vh;
+  background-color: @color-bg-page;
+}
+
+// 登录区域
+.loginSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: @spacing-xl * 3 @spacing-lg;
+}
+
+.loginTitle {
+  font-size: @font-size-xl;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-sm;
+}
+
+.loginDesc {
+  font-size: @font-size-md;
+  color: @color-text-secondary;
+  margin-bottom: @spacing-xl;
+}
+
+.loginBtn {
+  background-color: @color-primary;
+  color: #fff;
+  font-size: @font-size-md;
+  padding: @spacing-md @spacing-xl;
+  border-radius: @radius-md;
+  border: none;
+}
+
+// 用户信息
+.userSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: @spacing-xl * 2 @spacing-lg;
+  background-color: @color-bg-card;
+  margin-bottom: @spacing-md;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: @color-bg-skeleton;
+  margin-bottom: @spacing-md;
+}
+
+.nickname {
+  font-size: @font-size-xl;
+  font-weight: 600;
+  color: @color-text-primary;
+}
+
+// 菜单列表
+.menuSection {
+  background-color: @color-bg-card;
+  margin-bottom: @spacing-md;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: @spacing-lg;
+  border-bottom: 1PX solid @color-border-light;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:active {
+    background-color: @color-bg-page;
+  }
+}
+
+.menuIcon {
+  font-size: 40px;
+  margin-right: @spacing-md;
+}
+
+.menuContent {
+  flex: 1;
+}
+
+.menuTitle {
+  font-size: @font-size-md;
+  color: @color-text-primary;
+  margin-bottom: 4px;
+}
+
+.menuDesc {
+  font-size: @font-size-sm;
+  color: @color-text-placeholder;
+}
+
+.menuArrow {
+  font-size: @font-size-md;
+  color: @color-text-placeholder;
+}
+
+// 底部
+.footer {
+  padding: @spacing-xl;
+  text-align: center;
+}
+
+.version {
+  font-size: @font-size-sm;
+  color: @color-text-placeholder;
+}

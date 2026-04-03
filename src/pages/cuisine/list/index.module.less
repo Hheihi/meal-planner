@@ -1,0 +1,45 @@
+@import '../../../app.less';
+
+.container {
+  min-height: 100vh;
+  background-color: @color-bg-page;
+  padding: @spacing-md;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @spacing-md;
+}
+
+.gridItem {
+  width: calc(50% - @spacing-md / 2);
+  background-color: @color-bg-card;
+  border-radius: @radius-md;
+  padding: @spacing-lg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: @spacing-sm;
+}
+
+.name {
+  font-size: @font-size-md;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: 4px;
+}
+
+.count {
+  font-size: @font-size-sm;
+  color: @color-text-placeholder;
+}

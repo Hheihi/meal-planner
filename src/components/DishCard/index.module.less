@@ -1,0 +1,113 @@
+@import '../../app.less';
+
+// Large 样式
+.card {
+  background-color: @color-bg-card;
+  border-radius: @radius-md;
+  overflow: hidden;
+  margin-bottom: @spacing-md;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.image {
+  width: 100%;
+  height: 360px;
+  background-color: @color-bg-skeleton;
+}
+
+.content {
+  padding: @spacing-md;
+}
+
+.name {
+  font-size: @font-size-lg;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-sm;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @spacing-xs;
+  margin-bottom: @spacing-md;
+}
+
+.tag {
+  font-size: @font-size-sm;
+  color: @color-text-secondary;
+  background-color: @color-bg-page;
+  padding: 4px @spacing-sm;
+  border-radius: @radius-sm;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calories {
+  font-size: @font-size-md;
+  color: @color-primary;
+  font-weight: 500;
+}
+
+.addBtn {
+  width: 56px;
+  height: 56px;
+  background-color: @color-primary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addText {
+  font-size: 40px;
+  color: #fff;
+  line-height: 1;
+}
+
+// Small 样式
+.smallCard {
+  display: flex;
+  align-items: center;
+  background-color: @color-bg-card;
+  border-radius: @radius-md;
+  padding: @spacing-md;
+  margin-bottom: @spacing-md;
+}
+
+.smallImage {
+  width: 140px;
+  height: 140px;
+  border-radius: @radius-sm;
+  background-color: @color-bg-skeleton;
+  flex-shrink: 0;
+  margin-right: @spacing-md;
+}
+
+.smallContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.smallName {
+  font-size: @font-size-md;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-xs;
+}
+
+.smallInfo {
+  font-size: @font-size-sm;
+  color: @color-text-secondary;
+  margin-bottom: @spacing-xs;
+}
+
+.smallCalories {
+  font-size: @font-size-sm;
+  color: @color-primary;
+}

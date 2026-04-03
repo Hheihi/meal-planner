@@ -1,0 +1,134 @@
+@import '../../../app.less';
+
+.page {
+  min-height: 100vh;
+  background-color: @color-bg-page;
+}
+
+// 未加入家庭状态
+.joinSection {
+  padding: @spacing-lg;
+  text-align: center;
+}
+
+.joinText {
+  font-size: @font-size-md;
+  color: @color-text-secondary;
+  margin-bottom: @spacing-md;
+}
+
+.joinBtn {
+  background-color: @color-bg-card;
+  color: @color-text-primary;
+  font-size: @font-size-md;
+  padding: @spacing-md @spacing-xl;
+  border-radius: @radius-md;
+  border: 1PX solid @color-border;
+}
+
+// 家庭头部
+.familyHeader {
+  background-color: @color-bg-card;
+  padding: @spacing-xl;
+  text-align: center;
+  margin-bottom: @spacing-md;
+}
+
+.familyName {
+  font-size: @font-size-xl;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-xs;
+}
+
+.memberCount {
+  font-size: @font-size-sm;
+  color: @color-text-secondary;
+  margin-bottom: @spacing-sm;
+}
+
+.inviteCode {
+  font-size: @font-size-md;
+  color: @color-text-placeholder;
+  margin-bottom: @spacing-md;
+}
+
+.shareBtn {
+  display: inline-block;
+  background-color: @color-primary;
+  padding: @spacing-sm @spacing-lg;
+  border-radius: @radius-md;
+}
+
+.shareText {
+  font-size: @font-size-md;
+  color: #fff;
+}
+
+// 成员列表
+.membersSection {
+  background-color: @color-bg-card;
+  padding: @spacing-lg;
+  margin-bottom: @spacing-md;
+}
+
+.sectionTitle {
+  font-size: @font-size-lg;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-md;
+}
+
+.memberItem {
+  display: flex;
+  align-items: center;
+  padding: @spacing-md 0;
+  border-bottom: 1PX solid @color-border-light;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.memberAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: @color-bg-skeleton;
+  margin-right: @spacing-md;
+}
+
+.memberInfo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.memberName {
+  font-size: @font-size-md;
+  color: @color-text-primary;
+  margin-right: @spacing-sm;
+}
+
+.creatorBadge {
+  font-size: @font-size-xs;
+  color: @color-primary;
+  background-color: @color-primary-light;
+  padding: 2px @spacing-sm;
+  border-radius: @radius-sm;
+}
+
+// 退出按钮
+.leaveSection {
+  padding: @spacing-lg;
+}
+
+.leaveBtn {
+  width: 100%;
+  background-color: @color-bg-card;
+  color: @color-error;
+  font-size: @font-size-md;
+  padding: @spacing-md;
+  border-radius: @radius-md;
+  border: 1PX solid @color-error;
+}

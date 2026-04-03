@@ -1,0 +1,117 @@
+@import '../../app.less';
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    @color-bg-skeleton 25%,
+    #F5F5F5 50%,
+    @color-bg-skeleton 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+// Card 类型
+.card {
+  background: @color-bg-card;
+  border-radius: @radius-md;
+  overflow: hidden;
+  margin: @spacing-md;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+}
+
+.content {
+  padding: @spacing-md;
+}
+
+.title {
+  height: 40px;
+  width: 60%;
+  border-radius: @radius-sm;
+  margin-bottom: @spacing-sm;
+}
+
+.desc {
+  height: 28px;
+  width: 80%;
+  border-radius: @radius-sm;
+  margin-bottom: @spacing-xs;
+}
+
+// List 类型
+.list {
+  padding: @spacing-md;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: @spacing-md 0;
+  border-bottom: 1PX solid @color-border-light;
+}
+
+.listImage {
+  width: 120px;
+  height: 120px;
+  border-radius: @radius-sm;
+  margin-right: @spacing-md;
+  flex-shrink: 0;
+}
+
+.listContent {
+  flex: 1;
+}
+
+.listTitle {
+  height: 36px;
+  width: 70%;
+  border-radius: @radius-sm;
+  margin-bottom: @spacing-sm;
+}
+
+.listDesc {
+  height: 28px;
+  width: 50%;
+  border-radius: @radius-sm;
+}
+
+// Detail 类型
+.detail {
+  background: @color-bg-card;
+}
+
+.detailImage {
+  width: 100%;
+  height: 500px;
+}
+
+.detailContent {
+  padding: @spacing-lg;
+}
+
+.detailTitle {
+  height: 48px;
+  width: 60%;
+  border-radius: @radius-sm;
+  margin-bottom: @spacing-lg;
+}
+
+.detailLine {
+  height: 32px;
+  width: 100%;
+  border-radius: @radius-sm;
+  margin-bottom: @spacing-md;
+}

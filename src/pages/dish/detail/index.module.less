@@ -1,0 +1,180 @@
+@import '../../../app.less';
+
+.page {
+  min-height: 100vh;
+  background-color: @color-bg-page;
+  position: relative;
+}
+
+.scrollView {
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+  background-color: @color-bg-skeleton;
+}
+
+.content {
+  padding: @spacing-lg;
+}
+
+.header {
+  margin-bottom: @spacing-lg;
+}
+
+.name {
+  font-size: @font-size-xl;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-sm;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @spacing-xs;
+}
+
+.tag {
+  font-size: @font-size-sm;
+  color: @color-text-secondary;
+  background-color: @color-bg-page;
+  padding: 4px @spacing-sm;
+  border-radius: @radius-sm;
+}
+
+.section {
+  background-color: @color-bg-card;
+  border-radius: @radius-md;
+  padding: @spacing-lg;
+  margin-bottom: @spacing-lg;
+}
+
+.sectionTitle {
+  font-size: @font-size-lg;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: @spacing-md;
+}
+
+.hint {
+  font-size: @font-size-xs;
+  color: @color-text-placeholder;
+  text-align: center;
+  margin-top: @spacing-sm;
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @spacing-sm;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  background-color: @color-bg-page;
+  padding: @spacing-sm @spacing-md;
+  border-radius: @radius-sm;
+}
+
+.ingredientName {
+  font-size: @font-size-sm;
+  color: @color-text-primary;
+  margin-right: @spacing-xs;
+}
+
+.ingredientAmount {
+  font-size: @font-size-sm;
+  color: @color-text-placeholder;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: @spacing-lg;
+}
+
+.step {
+  display: flex;
+  gap: @spacing-md;
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  background-color: @color-primary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepNumberText {
+  font-size: @font-size-md;
+  color: #fff;
+  font-weight: 600;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepText {
+  font-size: @font-size-md;
+  color: @color-text-primary;
+  line-height: 1.6;
+  margin-bottom: @spacing-sm;
+}
+
+.stepImage {
+  width: 100%;
+  height: 300px;
+  border-radius: @radius-md;
+  background-color: @color-bg-skeleton;
+}
+
+.bottomPlaceholder {
+  height: 160px;
+}
+
+.bottomBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: @color-bg-card;
+  border-top: 1PX solid @color-border-light;
+  padding: @spacing-md @spacing-lg;
+  padding-bottom: calc(@spacing-md + env(safe-area-inset-bottom));
+}
+
+.mealButtons {
+  display: flex;
+  gap: @spacing-md;
+}
+
+.mealBtn {
+  flex: 1;
+  background-color: @color-primary;
+  border-radius: @radius-md;
+  padding: @spacing-md;
+  text-align: center;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.mealBtnDisabled {
+  background-color: @color-text-light;
+}
+
+.mealBtnText {
+  font-size: @font-size-md;
+  color: #fff;
+  font-weight: 500;
+}

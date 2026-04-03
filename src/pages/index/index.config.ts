@@ -1,3 +1,4 @@
 export default definePageConfig({
-  navigationBarTitleText: '首页'
+  navigationBarTitleText: '今日吃什么',
+  enablePullDownRefresh: true,
 })

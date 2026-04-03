@@ -1,0 +1,35 @@
+@import '../../app.less';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: @spacing-md 0;
+  background-color: @color-bg-card;
+  border-radius: @radius-md;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.value {
+  font-size: @font-size-lg;
+  font-weight: 600;
+  color: @color-text-primary;
+  margin-bottom: 4px;
+}
+
+.label {
+  font-size: @font-size-sm;
+  color: @color-text-placeholder;
+}
+
+.divider {
+  width: 1PX;
+  height: 60px;
+  background-color: @color-border;
+}
